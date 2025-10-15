@@ -137,7 +137,7 @@ h6,
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
-        margin-left: 200px;
+        margin-left: 180px;
         color: var(--dark) !important;
     }
 
@@ -843,3 +843,4 @@ h6,
     background-position: bottom center;
 
 }
+
