@@ -183,37 +183,48 @@
             <div class="row g-5">
                 <div class="col-lg-6 contact-form wow slideInUp" data-wow-delay="0.3s">
                     <div id="alertMessage"></div>
-                    <form id="contactForm" novalidate="novalidate">
-                        <div class="row gx-3">
-                            <div class="col-md-6 control-group">
-                                <input type="text" class="form-control border-0 bg-light px-4" id="name" placeholder="Your Name"
-                                required="required" data-validation-required-message="Please enter your name" style="height: 55px;">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="col-md-6 control-group">
-                                <input type="email" class="form-control border-0 bg-light px-4" id="email" placeholder="Your Email"
-                                required="required" data-validation-required-message="Please enter your email" style="height: 55px;">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="col-12 control-group">
-                                <input type="text" class="form-control border-0 bg-light px-4" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject" style="height: 55px;">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="col-12 control-group">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4" id="message" placeholder="Message"
-                                required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit" id="sendMessageButton">
-                                    <span>SEND</span>
-                                    <div class="d-none spinner-border spinner-border-sm text-light ms-3" role="status"></div>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+<form id="contactForm" name="contact" method="POST" data-netlify="true" novalidate="novalidate">
+  <!-- hidden input required by Netlify -->
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="row gx-3">
+    <div class="col-md-6 control-group">
+      <input type="text" name="name" class="form-control border-0 bg-light px-4" id="name"
+        placeholder="Your Name" required="required"
+        data-validation-required-message="Please enter your name" style="height: 55px;">
+      <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="col-md-6 control-group">
+      <input type="email" name="email" class="form-control border-0 bg-light px-4" id="email"
+        placeholder="Your Email" required="required"
+        data-validation-required-message="Please enter your email" style="height: 55px;">
+      <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="col-12 control-group">
+      <input type="text" name="subject" class="form-control border-0 bg-light px-4" id="subject"
+        placeholder="Subject" required="required"
+        data-validation-required-message="Please enter a subject" style="height: 55px;">
+      <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="col-12 control-group">
+      <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4" id="message"
+        placeholder="Message" required="required"
+        data-validation-required-message="Please enter your message"></textarea>
+      <p class="help-block text-danger"></p>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary w-100 py-3" type="submit" id="sendMessageButton">
+        <span>SEND</span>
+        <div class="d-none spinner-border spinner-border-sm text-light ms-3" role="status"></div>
+      </button>
+    </div>
+  </div>
+</form>
+
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
@@ -351,6 +362,7 @@
 
 <!-- Mirrored from demo.htmlcodex.com/pro/startup/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 16:13:14 GMT -->
 </html>
+
 
 
 
