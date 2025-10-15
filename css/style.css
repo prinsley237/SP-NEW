@@ -154,7 +154,7 @@ h6,
 
     .navbar-light .navbar-brand h1 {
         color: var(--primary);
-        font-size: 20px;
+        font-size: 24px;
 		white-space: nowrap;
     }
 
@@ -857,6 +857,7 @@ h6,
     background-position: bottom center;
 
 }
+
 
 
 
