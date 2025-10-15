@@ -137,7 +137,7 @@ h6,
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
-        margin-left: 0;
+        margin-left: 200px;
         color: var(--dark) !important;
     }
 
@@ -841,4 +841,5 @@ h6,
 .home-demo-item:hover a,
 .inner-demo-item:hover a {
     background-position: bottom center;
+
 }
