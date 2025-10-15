@@ -125,30 +125,44 @@ h6,
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: sticky;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
         background: #FFFFFF;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-light .navbar-toggler {
+        display: block !important;
+        z-index: 10000;
+        border: none;
     }
 
     .navbar-light .navbar-collapse {
-        margin-top: 15px;
+        background: #FFFFFF;
+        margin-top: 10px;
         border-top: 1px solid #DDDDDD;
     }
 
     .navbar-light .navbar-nav .nav-link,
     .sticky-top.navbar-light .navbar-nav .nav-link {
-        padding: 10px 0;
-        margin-left: 150px;
+        padding: 10px 15px;
+        margin-left: 0;
         color: var(--dark) !important;
     }
 
     .navbar-light .navbar-brand h1 {
         color: var(--primary);
+        font-size: 20px;
     }
 
     .navbar-light .navbar-brand img {
-        max-height: 45px;
+        max-height: 40px;
     }
 }
+
 
 @media (min-width: 992px) {
     .navbar-light {
@@ -843,5 +857,6 @@ h6,
     background-position: bottom center;
 
 }
+
 
 
