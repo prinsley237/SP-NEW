@@ -6,8 +6,8 @@
     --dark: #091E3E;
 }
 
-iframe[title="chat widget"] {
-    bottom: 80px !important;
+.tawk-min-container {
+    bottom: 80px !important; /* Change 80px to your preferred height */
 }
 
 
@@ -862,6 +862,7 @@ h6,
     background-position: bottom center;
 
 }
+
 
 
 
