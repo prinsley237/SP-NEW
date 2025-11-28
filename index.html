@@ -1001,12 +1001,27 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        var tawk = document.querySelector("iframe[src*='tawk.to']");
+        if (tawk) {
+            tawk.style.bottom = "90px"; // change the value as needed
+            tawk.style.position = "fixed";
+        }
+    }, 2000); // wait for tawk to finish loading
+});
+</script>
+
+
 </body> 
 
 
 <!-- Mirrored from demo.htmlcodex.com/pro/startup/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 16:13:07 GMT -->
 
 </html>
+
 
 
 
