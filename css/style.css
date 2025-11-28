@@ -6,6 +6,11 @@
     --dark: #091E3E;
 }
 
+iframe[title="chat widget"] {
+    bottom: 80px !important;
+}
+
+
 
 #spinner {
     opacity: 0;
@@ -857,6 +862,7 @@ h6,
     background-position: bottom center;
 
 }
+
 
 
 
