@@ -867,6 +867,44 @@ h6,
 
 
 
+/* fix subtitle transition gap in carousel */
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  margin: 0;
+  padding: 0 !important;
+  line-height: 1.2;
+}
+
+.carousel-caption h5,
+.carousel-caption h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  transition: opacity .4s ease, transform .4s ease;
+}
+
+.carousel-caption h5 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-caption .active h5,
+.carousel-caption .carousel-item.active h5 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-caption .carousel-item-next h5,
+.carousel-caption .carousel-item-prev h5 {
+  opacity: 0;
+  transform: translateY(.35rem);
+}
+
+
 
 
 
